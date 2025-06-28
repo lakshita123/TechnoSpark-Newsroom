@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechnoSpark Newsroom</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    article {
+      background: #fff;
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    article img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+    article h2 {
+      margin-top: 0;
+    }
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+    }
+    .reveal-btn {
+      display: block;
+      margin: 30px auto;
+      padding: 10px 20px;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .truth {
+      display: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🧠 TechnoSpark Newsroom</h1>
+  <p>Where Truth and Fiction Collide</p>
+</header>
+
+<div class="container">
+
+  <!-- ARTICLE 1 -->
+  <article>
+    <h2>World’s First Floating City Begins Construction Near Maldives</h2>
+    <p><em>By Tech Bureau | March 2025</em></p>
+    <img src="https://source.unsplash.com/800x400/?floating,city" alt="Floating City" />
+    <p>A revolutionary floating city is under construction near the Maldives, designed to combat rising sea levels. It’s the first of its kind and will house over 20,000 people on water.</p>
+    <p class="truth">✅ This article is TRUE.</p>
+  </article>
+
+  <!-- ARTICLE 2 -->
+  <article>
+    <h2>Scientists Discover Singing Trees That Change Tunes With Weather</h2>
+    <p><em>By Aurora Ray | April 2025</em></p>
+    <img src="https://source.unsplash.com/800x400/?tree,forest" alt="Singing Trees" />
+    <p>Researchers claim trees in Iceland hum different musical notes based on temperature and humidity. Locals say it’s like living in a natural symphony.</p>
+    <p class="truth">❌ This article is FAKE.</p>
+  </article>
+
+  <!-- ARTICLE 3 -->
+  <article>
+    <h2>AI-Powered Judges Trialed in Estonia to Clear Court Backlogs</h2>
+    <p><em>By Global Legal Desk | February 2025</em></p>
+    <img src="https://source.unsplash.com/800x400/?courtroom,AI" alt="AI Judges" />
+    <p>Estonia is experimenting with artificial intelligence in small claims court, allowing bots to review cases and suggest outcomes to reduce backlog and improve speed.</p>
+    <p class="truth">✅ This article is TRUE.</p>
+  </article>
+
+  <!-- ARTICLE 4 -->
+  <article>
+    <h2>NASA Accidentally Sends Potato to Mars Instead of Spare Rover Part</h2>
+    <p><em>By AstroWorld | January 2025</em></p>
+    <img src="https://source.unsplash.com/800x400/?mars,space" alt="Mars Potato" />
+    <p>In a bizarre logistics error, NASA reportedly shipped a potato to Mars thinking it was a spare wheel for the Mars Rover. Scientists are baffled, but amused.</p>
+    <p class="truth">❌ This article is FAKE.</p>
+  </article>
+
+  <!-- ARTICLE 5 -->
+  <article>
+    <h2>World’s Smallest Camera Can Fit Inside a Syringe</h2>
+    <p><em>By HealthTech News | March 2025</em></p>
+    <img src="https://source.unsplash.com/800x400/?medical,technology" alt="Micro Camera" />
+    <p>A new breakthrough in medical imaging has produced a working camera so tiny it can be injected into the human body via a syringe — revolutionizing diagnostics.</p>
+    <p class="truth">✅ This article is TRUE.</p>
+  </article>
+
+  <!-- ARTICLE 6 -->
+  <article>
+    <h2>Cows in Switzerland Equipped With 5G to Monitor Mood Swings</h2>
+    <p><em>By AgriTech Journal | May 2025</em></p>
+    <img src="https://source.unsplash.com/800x400/?cow,technology" alt="5G Cows" />
+    <p>Swiss farms are allegedly using 5G-enabled headsets to track cows’ emotions in real time. Farmers claim it’s improved milk quality and cow happiness.</p>
+    <p class="truth">❌ This article is FAKE.</p>
+  </article>
+
+  <button class="reveal-btn" onclick="revealTruths()">Click to Reveal Which Articles Are Real</button>
+</div>
+
+<footer>
+  <p>Created by Team TechnoSpark | All content for educational purpose only.</p>
+</footer>
+
+<script>
+  function revealTruths() {
+    const truths = document.querySelectorAll('.truth');
+    truths.forEach(t => t.style.display = 'block');
+  }
+</script>
+
+</body>
+</html>
